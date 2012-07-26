@@ -23,6 +23,7 @@ The configuration was created from scratch, and current main features are:
 * __vim_markdown__
 * __Ack__
  * `:Ack {expression}` to find in files under pwd
+* __matchit__
 
 ## Deploying
 Just clone the repository to <somefolder>, symlink _~/.vim_ folder to <somefolder> and _~/.vimrc_ file to _~/.vim/vimrc_.
