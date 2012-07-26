@@ -18,8 +18,8 @@ The configuration was created from scratch, and current main features are:
  * `ys{motion}{surrounding}` to add surrounding. _Example:_ `ys2w"` to add " surround to next 2 words
 * __vim_repeat__
 * __tcomment_vim__
- * gc{motion} or gcc to toggle comment in Normal Mode
- * gc to toggle commnet on Visual Mode
+ * `gc{motion}` or `gcc` to toggle comment in Normal Mode
+ * `gc` to toggle comment on Visual Mode
 * __vim_markdown__
 * __Ack__
  * `:Ack {expression}` to find in files under pwd
