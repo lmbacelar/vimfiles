@@ -75,6 +75,7 @@ _Purpose_: Textile syntax
 ### Rendering
 * __vim-preview__  
 _Purpose_: preview markup (`markdown`, `rdoc`, `textile`, `html`) on default browser
+  * `\P` to open browser with preview
 
 ## Install
 Just clone the repository to <somefolder>, symlink _~/.vim_ folder to <somefolder> and _~/.vimrc_ file to _~/.vim/vimrc_.
