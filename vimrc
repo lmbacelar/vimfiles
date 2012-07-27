@@ -47,7 +47,6 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-
 set t_Co=256                      " Needed for railscasts colorscheme
 colorscheme railscasts            " Or use topfunky-light, vividchalk, railscasts2
 
@@ -55,6 +54,15 @@ colorscheme railscasts            " Or use topfunky-light, vividchalk, railscast
 map <Leader>t :FufCoverageFile<Enter>
 map <Leader>f :FufFile<Enter>
 map <Leader>b :FufBuffer<Enter>
+
+" Gundo mapping
+nnoremap <Leader>u :GundoToggle<Enter>
+
+" YankRing mapping
+nnoremap <Leader>y :YRShow<Enter>
+
+"mark syntax errors with :signs
+let g:syntastic_enable_signs=1
 
 " Tab mappings.
 " map <leader>tt :tabnew<cr>
@@ -66,9 +74,6 @@ map <Leader>b :FufBuffer<Enter>
 " map <leader>tf :tabfirst<cr>
 " map <leader>tl :tablast<cr>
 " map <leader>tm :tabmove
-
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
