@@ -56,6 +56,19 @@ _Purpose_: commenting mapings
 * __supertab__  
 _Purpose_: tab completion
 
+### Frontends
+* __vim-fugitive__  
+_Purpose_: git front-end
+  * `Gadd`, `Gread` to add or checkout current buffer
+  * `Gremove`, `Gmove` to act on current buffer
+  * `Gstatus` to check status of repository files
+    * `C-n`, `C-p` to move between files
+    * `-` to add/remove file to index
+    * `C` to commit changes
+    * `<Enter>` to view file
+  * `Gdiff` to check changes
+    * `:diffget`, `:diffput` to add/remove parts of a file to the index
+
 ### Syntax
 * __syntastic__  
 _Purpose_: syntax checking, error / warning mapping
