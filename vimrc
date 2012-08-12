@@ -50,6 +50,12 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 set t_Co=256                      " Needed for railscasts colorscheme
 colorscheme railscasts            " Or use topfunky-light, vividchalk, railscasts2
 
+" jumps to the last known position in a file just after opening it
+autocmd BufReadPost * 
+  \ if line("'\"") > 1 && line("'\"") <= line("$") | 
+  \   exe "normal! g`\"" | 
+  \ endif
+
 " FuzzyFinder mappings.
 map <Leader>t :FufCoverageFile<Enter>
 map <Leader>f :FufFile<Enter>
