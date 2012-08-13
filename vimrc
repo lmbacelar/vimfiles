@@ -59,10 +59,17 @@ autocmd BufReadPost *
 " Clear search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
 
-" FuzzyFinder mappings.
-map <Leader>t :FufCoverageFile<Enter>
-map <Leader>f :FufFile<Enter>
-map <Leader>b :FufBuffer<Enter>
+" CommandT mappings.
+map <Leader>b :CommandTFlush<cr>\|:CommandTBuffer<cr>
+map <Leader>g :CommandTFlush<cr>\|:CommandT<cr>
+map <Leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
+map <Leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
+map <Leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
+map <Leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
+map <Leader>gl :CommandTFlush<cr>\|:CommandT lib/<cr>
+map <Leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
+map <Leader>gG :topleft 100 :split Gemfile<cr>
+map <Leader>gR :topleft 100 :split Rakefile<cr>
 
 " Gundo mapping
 nnoremap <Leader>u :GundoToggle<Enter>

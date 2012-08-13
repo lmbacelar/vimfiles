@@ -24,11 +24,12 @@ _Purpose_: repeat plugin mappings with `.`
 _Purpose_: enhanced abbreviation, substitution and coercion
 
 ### Navigation
-* __vim-fuzzyfinder__ + deps (_l9_)  
+* __CommandT__
 _Purpose_: file / buffer navigation
-  * `\t`: fuzzy matcher
-  * `\f`: file browsing
+  * `\g`: fuzzy matcher
   * `\b`: buffer browsing
+  * `\g{m,c,v,h,l,a}`: fuzzy matcher start navigation on `models`, `controllers`, `views`, `helpers`, `lib`, `assets` folders
+  * `\g{G,R}`: open Gemfile, Rakefile
 * __Ack__  
 _Purpose_: multiple file searching
   * `:Ack {expression}` to find in files under pwd
