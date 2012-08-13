@@ -56,6 +56,9 @@ autocmd BufReadPost *
   \   exe "normal! g`\"" | 
   \ endif
 
+" Clear search buffer when hitting return
+:nnoremap <CR> :nohlsearch<cr>
+
 " FuzzyFinder mappings.
 map <Leader>t :FufCoverageFile<Enter>
 map <Leader>f :FufFile<Enter>
