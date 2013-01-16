@@ -92,8 +92,10 @@ _Purpose_: preview markup (`markdown`, `rdoc`, `textile`, `html`) on default bro
   * `\P` to open browser with preview
 
 ## Install
-Just clone the repository to <somefolder>, symlink _~/.vim_ folder to <somefolder> and _~/.vimrc_ file to _~/.vim/vimrc_.
+Just clone the repository to <somefolder>, init and update submodules, symlink _~/.vim_ folder to <somefolder> and _~/.vimrc_ file to _~/.vim/vimrc_.
 
-    git clone https://github.com/lmbacelar/vimfiles.git ~/.vim <somefolder>
-    ln -nfs ~/.vim/vim <somefolder>
-    ln -nfs ~/.vim/vimrc ~/.vimrc
+    git clone https://github.com/lmbacelar/vimfiles.git <somefolder>
+    cd <somefolder>
+    git submodule update --init
+    ln -nfs  <somefolder> ~/.vim
+    ln -nfs ~/.vimrc ~/.vim/vimrc
