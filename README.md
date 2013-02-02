@@ -99,3 +99,10 @@ Just clone the repository to <somefolder>, init and update submodules, symlink _
     git submodule update --init
     ln -nfs  <somefolder> ~/.vim
     ln -nfs ~/.vimrc ~/.vim/vimrc
+
+To initialize __CommandT__:
+    cd ~/.vim/bundle/command-t/ruby/command-t
+    ruby extconf.rb
+    make
+
+_(check_ __CommandT__ _plugin github for details.)_
