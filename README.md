@@ -101,6 +101,7 @@ Just clone the repository to <somefolder>, init and update submodules, symlink _
     ln -nfs ~/.vimrc ~/.vim/vimrc
 
 To initialize __CommandT__:
+
     cd ~/.vim/bundle/command-t/ruby/command-t
     ruby extconf.rb
     make
