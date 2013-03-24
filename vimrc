@@ -59,15 +59,15 @@ autocmd BufReadPost *
 " Clear search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
 
-" CommandT mappings.
-map <Leader>b :CommandTFlush<cr>\|:CommandTBuffer<cr>
-map <Leader>g :CommandTFlush<cr>\|:CommandT<cr>
-map <Leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <Leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <Leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <Leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <Leader>gl :CommandTFlush<cr>\|:CommandT lib/<cr>
-map <Leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
+" CtrlP mappings.
+map <Leader>b :CtrlPBuffer<cr>
+map <Leader>g :CtrlPMixed<cr>
+map <Leader>gv :CtrlPMixed app/views<cr>
+map <Leader>gc :CtrlPMixed app/controllers<cr>
+map <Leader>gm :CtrlPMixed app/models<cr>
+map <Leader>gh :CtrlPMixed app/helpers<cr>
+map <Leader>gl :CtrlPMixed lib/<cr>
+map <Leader>ga :CtrlPMixed app/assets<cr>
 map <Leader>gG :topleft 100 :split Gemfile<cr>
 map <Leader>gR :topleft 100 :split Rakefile<cr>
 

@@ -24,7 +24,7 @@ _Purpose_: repeat plugin mappings with `.`
 _Purpose_: enhanced abbreviation, substitution and coercion
 
 ### Navigation
-* __CommandT__
+* __CtrlP__
 _Purpose_: file / buffer navigation
   * `\g`: fuzzy matcher
   * `\b`: buffer browsing
@@ -99,11 +99,3 @@ Just clone the repository to <somefolder>, init and update submodules, symlink _
     git submodule update --init
     ln -nfs  <somefolder> ~/.vim
     ln -nfs ~/.vimrc ~/.vim/vimrc
-
-To initialize __CommandT__:
-
-    cd ~/.vim/bundle/command-t/ruby/command-t
-    ruby extconf.rb
-    make
-
-_(check_ __CommandT__ _plugin github for details.)_
