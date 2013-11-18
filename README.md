@@ -78,6 +78,8 @@ _Purpose_: jQuery syntax
 _Purpose_: CoffeeScript syntax
 * __vim-haml__  
 _Purpose_: HAML, sass, scss syntax
+* __vim-slim__  
+_Purpose_: slim syntax
 * __vim-markdown__  
 _Purpose_: MarkDown syntax
 * __textile.vim__  
