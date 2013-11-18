@@ -61,13 +61,14 @@ autocmd BufReadPost *
 
 " CtrlP mappings.
 map <Leader>b :CtrlPBuffer<cr>
-map <Leader>g :CtrlPMixed<cr>
-map <Leader>gv :CtrlPMixed app/views<cr>
-map <Leader>gc :CtrlPMixed app/controllers<cr>
-map <Leader>gm :CtrlPMixed app/models<cr>
-map <Leader>gh :CtrlPMixed app/helpers<cr>
-map <Leader>gl :CtrlPMixed lib/<cr>
-map <Leader>ga :CtrlPMixed app/assets<cr>
+map <Leader>g :CtrlP<cr>
+map <Leader>gv :CtrlP app/views<cr>
+map <Leader>gc :CtrlP app/controllers<cr>
+map <Leader>gm :CtrlP app/models<cr>
+map <Leader>gh :CtrlP app/helpers<cr>
+map <Leader>ga :CtrlP app/assets<cr>
+map <Leader>gs :CtrlP spec<cr>
+map <Leader>gl :CtrlP lib/<cr>
 map <Leader>gG :topleft 100 :split Gemfile<cr>
 map <Leader>gR :topleft 100 :split Rakefile<cr>
 
