@@ -68,6 +68,7 @@ map <Leader>gm :CtrlP app/models<cr>
 map <Leader>gh :CtrlP app/helpers<cr>
 map <Leader>ga :CtrlP app/assets<cr>
 map <Leader>gs :CtrlP spec<cr>
+map <Leader>gf :CtrlP features<cr>
 map <Leader>gl :CtrlP lib/<cr>
 map <Leader>gG :topleft 100 :split Gemfile<cr>
 map <Leader>gR :topleft 100 :split Rakefile<cr>
