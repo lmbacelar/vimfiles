@@ -97,4 +97,4 @@ Just clone the repository to <somefolder>, init and update submodules, symlink _
     cd <somefolder>
     git submodule update --init
     ln -nfs  <somefolder> ~/.vim
-    ln -nfs ~/.vimrc ~/.vim/vimrc
+    ln -nfs ~/.vim/vimrc ~/.vimrc
